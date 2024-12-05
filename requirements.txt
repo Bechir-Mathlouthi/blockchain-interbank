@@ -1,0 +1,19 @@
+# Core dependencies
+Flask==2.3.3
+Flask-RESTful==0.3.10
+Flask-CORS==4.0.0
+typing-extensions>=4.5.0
+python-dotenv==1.0.0
+
+# Database
+SQLAlchemy==2.0.21
+
+# Security
+PyJWT==2.8.0
+bcrypt==4.0.1
+
+# Testing
+pytest>=7.3.1
+pytest-cov>=4.1.0
+
+# Frontend dependencies will be managed by npm

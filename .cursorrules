@@ -1,0 +1,36 @@
+# CursorRules for a simplified blockchain-based interbank transaction prototype
+rules:
+  - name: Create Project Skeleton
+    description: Create the basic structure for the blockchain project with folders for scripts, configurations, and data.
+    actions:
+      - Create folders: src, data, tests, docs
+      - Create files: src/blockchain.py, src/main.py, src/utils.py, data/transactions.db, README.md
+
+  - name: Implement Blockchain Basics
+    description: Add a Python class to simulate a blockchain.
+    actions:
+      - Create a `Blockchain` class in src/blockchain.py.
+      - Implement methods: `add_transaction`, `generate_block`, `validate_chain`, `get_chain`.
+
+  - name: Set Up SQLite Database
+    description: Set up an SQLite database to persist transactions and blocks.
+    actions:
+      - Add SQLite setup in src/utils.py.
+      - Create tables: `transactions`, `blocks`.
+      - Add functions to insert and query transactions and blocks.
+
+  - name: Build Main Application
+    description: Implement the main script to allow basic functionality like adding transactions and viewing the chain.
+    actions:
+      - Add CLI functionality in src/main.py for:
+          - Adding transactions.
+          - Generating blocks.
+          - Validating the chain.
+          - Viewing the chain.
+      - Ensure proper exception handling.
+
+  - name: Write Unit Tests
+    description: Add unit tests for blockchain and database functionality.
+    actions:
+      - Create test cases in tests/test_blockchain.py.
+      - Validate block generation, chain validation, and transaction storage.
