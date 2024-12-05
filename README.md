@@ -12,6 +12,12 @@ A modern blockchain implementation for secure and transparent interbank transact
 - 📱 Responsive design for all devices
 - 🗄️ SQLite database for persistence
 
+## 📸 Screenshots
+
+### Main Interface
+![Main Interface](screenshots/1.PNG)
+
+
 ## 🛠️ Technology Stack
 
 - **Backend**: Python 3.9+, Flask
